@@ -1,13 +1,13 @@
+# Helper used to count number of inversions between l and r
 def mergeCount(l, r):
-    i = j = k = 0
+    i = j = 0
     ret = 0
     while i < len(l) and j < len(r):
             if l[i] <= r[j]:
                 i += 1
             else:
                 j += 1
-                ret += len(l) - i
-            k += 1
+                ret += 1
     return ret
 
 

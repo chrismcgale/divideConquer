@@ -14,7 +14,7 @@ def median(arr):
         return arr[0]
         
     i = 0
-    d = 5 #Constant to make loop run in constant time
+    d = 5
     meds = []
 
     while d <= len(arr):

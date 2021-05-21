@@ -17,7 +17,7 @@ median: </br>
   Input: list of ints </br>
   Output: the median of the given list </br>
 
-Possible future work:
+Possible future work: </br>
   Matrix mult with Strassen's Algo </br>
-  Closest pair of points in graph
+  Closest pair of points in graph </br>
   

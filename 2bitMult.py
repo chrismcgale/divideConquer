@@ -24,7 +24,7 @@ def recurMult(x, y):
 
     return x1y1 * (2 ** n) + p + x0y0
 
-
+# Generic main
 if __name__ == '__main__':
     myArr = [(int)]
     file = open("test.txt", "r")

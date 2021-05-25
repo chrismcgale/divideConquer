@@ -1,8 +1,6 @@
-
 #arr will always have at most 5 elements and at least 3
 def qMed(arr):
-    print(arr)
-    r = len(arr) //2
+    r = len(arr) // 2
     arr.sort(key = int)
     return arr[r]
 
@@ -31,9 +29,5 @@ def median(arr):
 
 
 if __name__ == '__main__':
-    myArr = [(int)]
-    file = open("test.txt", "r")
-    line = file.readline()
-    myArr = line.split()
-    file.close()
-    print(median(myArr))
+    a = [int(x) for x in input().split()]
+    print(median(a))

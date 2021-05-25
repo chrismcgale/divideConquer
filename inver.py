@@ -17,7 +17,7 @@ def countInversions(arr):
     if len(arr) == 1 :
         return 0
     else:
-        m = len(arr)//2
+        m = len(arr) // 2
         s1 = countInversions(arr[:m])
         s2 = countInversions(arr[m:])
         s3 = mergeCount(arr[:m], arr[m:])
@@ -26,9 +26,5 @@ def countInversions(arr):
 
 
 if __name__ == '__main__':
-    myArr = [(int)]
-    file = open("test.txt", "r")
-    line = file.readline()
-    myArr = line.split()
-    file.close()
-    print(countInversions(myArr))
+    a = [int(x) for x in input().split()]
+    print(countInversions(a))

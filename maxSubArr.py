@@ -37,7 +37,7 @@ def maxSubArr(arr):
         return [arr[0]]
     else:
 
-        m = len(arr)//2
+        m = len(arr) // 2
         # Recursive step
         l = maxSubArr(arr[:m])
         r = maxSubArr(arr[m:])
@@ -61,11 +61,5 @@ def maxSubArr(arr):
         
 
 if __name__ == '__main__':
-    myArr = [(int)]
-    file = open("test.txt", "r")
-    line = file.readline()
-    myArr = line.split()
-    file.close()
-    for i in range(0, len(myArr)):
-        myArr[i] = int(myArr[i])
-    print(maxSubArr(myArr))
+    a = [int(x) for x in input().split()]
+    print(maxSubArr(a))

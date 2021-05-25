@@ -33,13 +33,8 @@ def recurMult(x, y):
 
 # Generic main
 if __name__ == '__main__':
-    myArr = []
-    file = open("test.txt", "r")
-    line1 = file.readline()
-    x = line1.rstrip("\n")
-    line2 = file.readline()
-    y = line2.rstrip("\n")
-    file.close()
+    a = [int(x) for x in input().split()]
+    b = [int(y) for y in input().split()]
 
-    print(recurMult(x, y))
+    print(recurMult(a, b))
     
